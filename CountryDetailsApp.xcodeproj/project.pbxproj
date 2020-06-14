@@ -15,6 +15,8 @@
 		DC536081249681F50031EEA7 /* CountryDetailsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC536080249681F50031EEA7 /* CountryDetailsAppTests.swift */; };
 		DC53609524968A3A0031EEA7 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DC53609324968A3A0031EEA7 /* Reachability.m */; };
 		DC53609F249695290031EEA7 /* CountryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53609E249695290031EEA7 /* CountryDetailTableViewCell.swift */; };
+		DC5360A124969C860031EEA7 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5360A024969C860031EEA7 /* Country.swift */; };
+		DC5360A524969CBA0031EEA7 /* CountryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5360A424969CBA0031EEA7 /* CountryDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		DC53609324968A3A0031EEA7 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		DC53609424968A3A0031EEA7 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		DC53609E249695290031EEA7 /* CountryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailTableViewCell.swift; sourceTree = "<group>"; };
+		DC5360A024969C860031EEA7 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		DC5360A424969CBA0031EEA7 /* CountryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 		DC53608D249688D10031EEA7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DC5360A024969C860031EEA7 /* Country.swift */,
+				DC5360A424969CBA0031EEA7 /* CountryDetails.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -266,7 +272,9 @@
 				DC53606E249681EB0031EEA7 /* CountryDetailsViewController.swift in Sources */,
 				DC53606A249681EB0031EEA7 /* AppDelegate.swift in Sources */,
 				DC53609524968A3A0031EEA7 /* Reachability.m in Sources */,
+				DC5360A524969CBA0031EEA7 /* CountryDetails.swift in Sources */,
 				DC53606C249681EB0031EEA7 /* SceneDelegate.swift in Sources */,
+				DC5360A124969C860031EEA7 /* Country.swift in Sources */,
 				DC53609F249695290031EEA7 /* CountryDetailTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
