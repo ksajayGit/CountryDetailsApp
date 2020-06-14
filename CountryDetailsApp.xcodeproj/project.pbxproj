@@ -17,6 +17,14 @@
 		DC53609F249695290031EEA7 /* CountryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53609E249695290031EEA7 /* CountryDetailTableViewCell.swift */; };
 		DC5360A124969C860031EEA7 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5360A024969C860031EEA7 /* Country.swift */; };
 		DC5360A524969CBA0031EEA7 /* CountryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5360A424969CBA0031EEA7 /* CountryDetails.swift */; };
+		DC5360A72496A2A40031EEA7 /* ServiceCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5360A62496A2A40031EEA7 /* ServiceCalls.swift */; };
+		DC5360A92496A3230031EEA7 /* ServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5360A82496A3230031EEA7 /* ServiceHandler.swift */; };
+		DC5360AB2496A3360031EEA7 /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5360AA2496A3360031EEA7 /* ApplicationError.swift */; };
+		DC5360AD2496A34A0031EEA7 /* JsonCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5360AC2496A34A0031EEA7 /* JsonCoder.swift */; };
+		DC5360AF2496A8840031EEA7 /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5360AE2496A8840031EEA7 /* CountryViewModel.swift */; };
+		DC5360B12496A8960031EEA7 /* CountryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5360B02496A8960031EEA7 /* CountryDetailsViewModel.swift */; };
+		DC5360B32496AE9D0031EEA7 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5360B22496AE9D0031EEA7 /* UIImageView+Extension.swift */; };
+		DC5360B52496B04B0031EEA7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5360B42496B04B0031EEA7 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +54,14 @@
 		DC53609E249695290031EEA7 /* CountryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailTableViewCell.swift; sourceTree = "<group>"; };
 		DC5360A024969C860031EEA7 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		DC5360A424969CBA0031EEA7 /* CountryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetails.swift; sourceTree = "<group>"; };
+		DC5360A62496A2A40031EEA7 /* ServiceCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCalls.swift; sourceTree = "<group>"; };
+		DC5360A82496A3230031EEA7 /* ServiceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHandler.swift; sourceTree = "<group>"; };
+		DC5360AA2496A3360031EEA7 /* ApplicationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationError.swift; sourceTree = "<group>"; };
+		DC5360AC2496A34A0031EEA7 /* JsonCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonCoder.swift; sourceTree = "<group>"; };
+		DC5360AE2496A8840031EEA7 /* CountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
+		DC5360B02496A8960031EEA7 /* CountryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewModel.swift; sourceTree = "<group>"; };
+		DC5360B22496AE9D0031EEA7 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		DC5360B42496B04B0031EEA7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +134,8 @@
 		DC53608C249688C40031EEA7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DC5360AE2496A8840031EEA7 /* CountryViewModel.swift */,
+				DC5360B02496A8960031EEA7 /* CountryDetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -143,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				DC53609124968A120031EEA7 /* Network Rechability */,
+				DC5360A62496A2A40031EEA7 /* ServiceCalls.swift */,
 			);
 			path = NetworkOperations;
 			sourceTree = "<group>";
@@ -154,6 +173,11 @@
 				DC53606B249681EB0031EEA7 /* SceneDelegate.swift */,
 				DC536072249681F40031EEA7 /* Assets.xcassets */,
 				DC536074249681F40031EEA7 /* LaunchScreen.storyboard */,
+				DC5360A82496A3230031EEA7 /* ServiceHandler.swift */,
+				DC5360AA2496A3360031EEA7 /* ApplicationError.swift */,
+				DC5360AC2496A34A0031EEA7 /* JsonCoder.swift */,
+				DC5360B22496AE9D0031EEA7 /* UIImageView+Extension.swift */,
+				DC5360B42496B04B0031EEA7 /* Constants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -271,11 +295,19 @@
 			files = (
 				DC53606E249681EB0031EEA7 /* CountryDetailsViewController.swift in Sources */,
 				DC53606A249681EB0031EEA7 /* AppDelegate.swift in Sources */,
+				DC5360B32496AE9D0031EEA7 /* UIImageView+Extension.swift in Sources */,
 				DC53609524968A3A0031EEA7 /* Reachability.m in Sources */,
 				DC5360A524969CBA0031EEA7 /* CountryDetails.swift in Sources */,
+				DC5360B52496B04B0031EEA7 /* Constants.swift in Sources */,
+				DC5360A92496A3230031EEA7 /* ServiceHandler.swift in Sources */,
 				DC53606C249681EB0031EEA7 /* SceneDelegate.swift in Sources */,
+				DC5360B12496A8960031EEA7 /* CountryDetailsViewModel.swift in Sources */,
+				DC5360AD2496A34A0031EEA7 /* JsonCoder.swift in Sources */,
+				DC5360A72496A2A40031EEA7 /* ServiceCalls.swift in Sources */,
 				DC5360A124969C860031EEA7 /* Country.swift in Sources */,
+				DC5360AF2496A8840031EEA7 /* CountryViewModel.swift in Sources */,
 				DC53609F249695290031EEA7 /* CountryDetailTableViewCell.swift in Sources */,
+				DC5360AB2496A3360031EEA7 /* ApplicationError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

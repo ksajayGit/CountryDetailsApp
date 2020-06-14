@@ -85,4 +85,36 @@ class CountryDetailTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    var countryInfo: CountryDetailsViewModel? {
+        didSet{
+            bindData()
+        }
+    }
+    
+    func bindData(){
+        guard let countryInfoItem = countryInfo else { return }
+        if let title = countryInfoItem.title {
+            titleLabel.text = title
+        }else{
+            titleLabel.text = "No Title"
+        }
+        
+        if let description = countryInfoItem.descriptionText {
+            descriptionLabel.text = description
+        }else{
+            descriptionLabel.text = "No Description"
+        }
+        
+        if let imageUrl = countryInfoItem.imageUrl {
+            profileImageView.loadImageFromCache(url: imageUrl)
+        }else{
+            profileImageView.image = UIImage(named: "No_Image_Found")
+        }
+    }
+    
+    override func prepareForReuse() {
+        titleLabel.text = ""
+        descriptionLabel.text = ""
+        profileImageView.image = nil
+    }
 }
