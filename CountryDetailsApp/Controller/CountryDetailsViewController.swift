@@ -9,10 +9,14 @@
 import UIKit
 
 class CountryDetailsViewController: UIViewController {
+    
+    let countrytableView = UITableView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        view.addSubview(countrytableView)
     }
 
 
