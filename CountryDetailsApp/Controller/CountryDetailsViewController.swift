@@ -16,7 +16,15 @@ class CountryDetailsViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        //MARK: Add TableView to Controller
         view.addSubview(countrytableView)
+        
+        //MARK: TableView Layout Contraints
+        countrytableView.translatesAutoresizingMaskIntoConstraints = false
+        countrytableView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
+        countrytableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+        countrytableView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+        countrytableView.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
     }
 
 
