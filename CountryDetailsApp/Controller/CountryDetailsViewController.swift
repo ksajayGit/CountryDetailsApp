@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CountryDetailsViewController.swift
 //  CountryDetailsApp
 //
 //  Created by MyHome on 14/06/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CountryDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

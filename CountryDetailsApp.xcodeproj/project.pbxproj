@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		DC53606A249681EB0031EEA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC536069249681EB0031EEA7 /* AppDelegate.swift */; };
 		DC53606C249681EB0031EEA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53606B249681EB0031EEA7 /* SceneDelegate.swift */; };
-		DC53606E249681EB0031EEA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53606D249681EB0031EEA7 /* ViewController.swift */; };
+		DC53606E249681EB0031EEA7 /* CountryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53606D249681EB0031EEA7 /* CountryDetailsViewController.swift */; };
 		DC536073249681F40031EEA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC536072249681F40031EEA7 /* Assets.xcassets */; };
 		DC536076249681F40031EEA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC536074249681F40031EEA7 /* LaunchScreen.storyboard */; };
 		DC536081249681F50031EEA7 /* CountryDetailsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC536080249681F50031EEA7 /* CountryDetailsAppTests.swift */; };
+		DC53609524968A3A0031EEA7 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DC53609324968A3A0031EEA7 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,16 @@
 		DC536066249681EB0031EEA7 /* CountryDetailsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryDetailsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC536069249681EB0031EEA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC53606B249681EB0031EEA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DC53606D249681EB0031EEA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC53606D249681EB0031EEA7 /* CountryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewController.swift; sourceTree = "<group>"; };
 		DC536072249681F40031EEA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC536075249681F40031EEA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC536077249681F40031EEA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC53607C249681F50031EEA7 /* CountryDetailsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountryDetailsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC536080249681F50031EEA7 /* CountryDetailsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsAppTests.swift; sourceTree = "<group>"; };
 		DC536082249681F50031EEA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC53609224968A380031EEA7 /* CountryDetailsApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CountryDetailsApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		DC53609324968A3A0031EEA7 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		DC53609424968A3A0031EEA7 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		DC536068249681EB0031EEA7 /* CountryDetailsApp */ = {
 			isa = PBXGroup;
 			children = (
+				DC536077249681F40031EEA7 /* Info.plist */,
 				DC536090249689320031EEA7 /* Common */,
 				DC53608F249689180031EEA7 /* NetworkOperations */,
 				DC53608E249688FC0031EEA7 /* Controller */,
@@ -120,7 +125,7 @@
 		DC53608E249688FC0031EEA7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DC53606D249681EB0031EEA7 /* ViewController.swift */,
+				DC53606D249681EB0031EEA7 /* CountryDetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 		DC53608F249689180031EEA7 /* NetworkOperations */ = {
 			isa = PBXGroup;
 			children = (
+				DC53609124968A120031EEA7 /* Network Rechability */,
 			);
 			path = NetworkOperations;
 			sourceTree = "<group>";
@@ -139,9 +145,18 @@
 				DC53606B249681EB0031EEA7 /* SceneDelegate.swift */,
 				DC536072249681F40031EEA7 /* Assets.xcassets */,
 				DC536074249681F40031EEA7 /* LaunchScreen.storyboard */,
-				DC536077249681F40031EEA7 /* Info.plist */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		DC53609124968A120031EEA7 /* Network Rechability */ = {
+			isa = PBXGroup;
+			children = (
+				DC53609424968A3A0031EEA7 /* Reachability.h */,
+				DC53609324968A3A0031EEA7 /* Reachability.m */,
+				DC53609224968A380031EEA7 /* CountryDetailsApp-Bridging-Header.h */,
+			);
+			path = "Network Rechability";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +209,7 @@
 				TargetAttributes = {
 					DC536065249681EB0031EEA7 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					DC53607B249681F50031EEA7 = {
 						CreatedOnToolsVersion = 11.5;
@@ -244,8 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC53606E249681EB0031EEA7 /* ViewController.swift in Sources */,
+				DC53606E249681EB0031EEA7 /* CountryDetailsViewController.swift in Sources */,
 				DC53606A249681EB0031EEA7 /* AppDelegate.swift in Sources */,
+				DC53609524968A3A0031EEA7 /* Reachability.m in Sources */,
 				DC53606C249681EB0031EEA7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CountryDetailsApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -407,6 +425,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MyApps.CountryDetailsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CountryDetailsApp/NetworkOperations/Network Rechability/CountryDetailsApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -416,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CountryDetailsApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -425,6 +446,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MyApps.CountryDetailsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CountryDetailsApp/NetworkOperations/Network Rechability/CountryDetailsApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
