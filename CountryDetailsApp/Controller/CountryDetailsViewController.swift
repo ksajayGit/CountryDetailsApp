@@ -25,8 +25,25 @@ class CountryDetailsViewController: UIViewController {
         countrytableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
         countrytableView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
         countrytableView.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
+        
+        //MARK: Register TableViewCell
+        countrytableView.register(CountryDetailTableViewCell.self, forCellReuseIdentifier: "countryDetailCell")
     }
 
 
+}
+
+extension CountryDetailsViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "countryDetailCell", for: indexPath) as! CountryDetailTableViewCell
+        
+        return cell
+    }
+    
+    
 }
 

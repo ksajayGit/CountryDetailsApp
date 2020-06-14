@@ -14,6 +14,7 @@
 		DC536076249681F40031EEA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC536074249681F40031EEA7 /* LaunchScreen.storyboard */; };
 		DC536081249681F50031EEA7 /* CountryDetailsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC536080249681F50031EEA7 /* CountryDetailsAppTests.swift */; };
 		DC53609524968A3A0031EEA7 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DC53609324968A3A0031EEA7 /* Reachability.m */; };
+		DC53609F249695290031EEA7 /* CountryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53609E249695290031EEA7 /* CountryDetailTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		DC53609224968A380031EEA7 /* CountryDetailsApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CountryDetailsApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		DC53609324968A3A0031EEA7 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		DC53609424968A3A0031EEA7 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		DC53609E249695290031EEA7 /* CountryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		DC53608B249688B60031EEA7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DC53609E249695290031EEA7 /* CountryDetailTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				DC53606A249681EB0031EEA7 /* AppDelegate.swift in Sources */,
 				DC53609524968A3A0031EEA7 /* Reachability.m in Sources */,
 				DC53606C249681EB0031EEA7 /* SceneDelegate.swift in Sources */,
+				DC53609F249695290031EEA7 /* CountryDetailTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
