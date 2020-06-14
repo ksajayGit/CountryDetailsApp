@@ -77,12 +77,12 @@
 		DC536068249681EB0031EEA7 /* CountryDetailsApp */ = {
 			isa = PBXGroup;
 			children = (
-				DC536069249681EB0031EEA7 /* AppDelegate.swift */,
-				DC53606B249681EB0031EEA7 /* SceneDelegate.swift */,
-				DC53606D249681EB0031EEA7 /* ViewController.swift */,
-				DC536072249681F40031EEA7 /* Assets.xcassets */,
-				DC536074249681F40031EEA7 /* LaunchScreen.storyboard */,
-				DC536077249681F40031EEA7 /* Info.plist */,
+				DC536090249689320031EEA7 /* Common */,
+				DC53608F249689180031EEA7 /* NetworkOperations */,
+				DC53608E249688FC0031EEA7 /* Controller */,
+				DC53608D249688D10031EEA7 /* Model */,
+				DC53608B249688B60031EEA7 /* View */,
+				DC53608C249688C40031EEA7 /* ViewModel */,
 			);
 			path = CountryDetailsApp;
 			sourceTree = "<group>";
@@ -94,6 +94,54 @@
 				DC536082249681F50031EEA7 /* Info.plist */,
 			);
 			path = CountryDetailsAppTests;
+			sourceTree = "<group>";
+		};
+		DC53608B249688B60031EEA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC53608C249688C40031EEA7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DC53608D249688D10031EEA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC53608E249688FC0031EEA7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC53606D249681EB0031EEA7 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DC53608F249689180031EEA7 /* NetworkOperations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkOperations;
+			sourceTree = "<group>";
+		};
+		DC536090249689320031EEA7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DC536069249681EB0031EEA7 /* AppDelegate.swift */,
+				DC53606B249681EB0031EEA7 /* SceneDelegate.swift */,
+				DC536072249681F40031EEA7 /* Assets.xcassets */,
+				DC536074249681F40031EEA7 /* LaunchScreen.storyboard */,
+				DC536077249681F40031EEA7 /* Info.plist */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
