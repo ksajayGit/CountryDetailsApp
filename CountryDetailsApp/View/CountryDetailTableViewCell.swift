@@ -26,7 +26,7 @@ class CountryDetailTableViewCell: UITableViewCell {
     
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.font = UIFont.systemFont(ofSize: 18)
         label.textColor = UIColor(red: 35.0/255.0, green: 70.0/255.0, blue: 120.0/255.0, alpha: 1.0)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
@@ -36,7 +36,7 @@ class CountryDetailTableViewCell: UITableViewCell {
     
     let descriptionLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.font = UIFont.systemFont(ofSize: 14)
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
@@ -54,11 +54,6 @@ class CountryDetailTableViewCell: UITableViewCell {
         layer.cornerRadius = 3
         layer.borderColor = UIColor.clear.cgColor
         layer.masksToBounds = true
-        layer.shadowOpacity = 0.18
-        layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-        layer.shadowRadius = 1.5
-        layer.shadowColor = UIColor.black.cgColor
-        layer.masksToBounds = false
         
         self.contentView.addSubview(profileImageView)
         containerStackview.addArrangedSubview(titleLabel)
@@ -96,19 +91,19 @@ class CountryDetailTableViewCell: UITableViewCell {
         if let title = countryInfoItem.title {
             titleLabel.text = title
         }else{
-            titleLabel.text = "No Title"
+            titleLabel.text = NO_TITLE_TEXT
         }
         
         if let description = countryInfoItem.descriptionText {
             descriptionLabel.text = description
         }else{
-            descriptionLabel.text = "No Description"
+            descriptionLabel.text = NO_DESCRIPTION_TEXT
         }
         
         if let imageUrl = countryInfoItem.imageUrl {
             profileImageView.loadImageFromCache(url: imageUrl)
         }else{
-            profileImageView.image = UIImage(named: "No_Image_Found")
+            profileImageView.image = UIImage(named: NO_IMAGE_FOUND)
         }
     }
     

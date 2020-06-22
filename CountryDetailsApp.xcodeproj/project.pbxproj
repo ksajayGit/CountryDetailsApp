@@ -13,7 +13,6 @@
 		DC536073249681F40031EEA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC536072249681F40031EEA7 /* Assets.xcassets */; };
 		DC536076249681F40031EEA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC536074249681F40031EEA7 /* LaunchScreen.storyboard */; };
 		DC536081249681F50031EEA7 /* CountryDetailsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC536080249681F50031EEA7 /* CountryDetailsAppTests.swift */; };
-		DC53609524968A3A0031EEA7 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DC53609324968A3A0031EEA7 /* Reachability.m */; };
 		DC53609F249695290031EEA7 /* CountryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53609E249695290031EEA7 /* CountryDetailTableViewCell.swift */; };
 		DC5360A124969C860031EEA7 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5360A024969C860031EEA7 /* Country.swift */; };
 		DC5360A524969CBA0031EEA7 /* CountryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5360A424969CBA0031EEA7 /* CountryDetails.swift */; };
@@ -25,6 +24,9 @@
 		DC5360B12496A8960031EEA7 /* CountryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5360B02496A8960031EEA7 /* CountryDetailsViewModel.swift */; };
 		DC5360B32496AE9D0031EEA7 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5360B22496AE9D0031EEA7 /* UIImageView+Extension.swift */; };
 		DC5360B52496B04B0031EEA7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5360B42496B04B0031EEA7 /* Constants.swift */; };
+		DCA19F0D24A1331200EAC43B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA19F0C24A1331200EAC43B /* Reachability.swift */; };
+		DCA19F0F24A13A0700EAC43B /* LoadingOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA19F0E24A13A0700EAC43B /* LoadingOverlayView.swift */; };
+		DCA19F1124A146E900EAC43B /* CountryServiceCallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA19F1024A146E900EAC43B /* CountryServiceCallTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +50,6 @@
 		DC53607C249681F50031EEA7 /* CountryDetailsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountryDetailsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC536080249681F50031EEA7 /* CountryDetailsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsAppTests.swift; sourceTree = "<group>"; };
 		DC536082249681F50031EEA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC53609224968A380031EEA7 /* CountryDetailsApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CountryDetailsApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		DC53609324968A3A0031EEA7 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		DC53609424968A3A0031EEA7 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		DC53609E249695290031EEA7 /* CountryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailTableViewCell.swift; sourceTree = "<group>"; };
 		DC5360A024969C860031EEA7 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		DC5360A424969CBA0031EEA7 /* CountryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetails.swift; sourceTree = "<group>"; };
@@ -62,6 +61,9 @@
 		DC5360B02496A8960031EEA7 /* CountryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewModel.swift; sourceTree = "<group>"; };
 		DC5360B22496AE9D0031EEA7 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		DC5360B42496B04B0031EEA7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DCA19F0C24A1331200EAC43B /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		DCA19F0E24A13A0700EAC43B /* LoadingOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOverlayView.swift; sourceTree = "<group>"; };
+		DCA19F1024A146E900EAC43B /* CountryServiceCallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryServiceCallTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			children = (
 				DC536080249681F50031EEA7 /* CountryDetailsAppTests.swift */,
 				DC536082249681F50031EEA7 /* Info.plist */,
+				DCA19F1024A146E900EAC43B /* CountryServiceCallTests.swift */,
 			);
 			path = CountryDetailsAppTests;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				DC53609E249695290031EEA7 /* CountryDetailTableViewCell.swift */,
+				DCA19F0E24A13A0700EAC43B /* LoadingOverlayView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -185,9 +189,7 @@
 		DC53609124968A120031EEA7 /* Network Rechability */ = {
 			isa = PBXGroup;
 			children = (
-				DC53609424968A3A0031EEA7 /* Reachability.h */,
-				DC53609324968A3A0031EEA7 /* Reachability.m */,
-				DC53609224968A380031EEA7 /* CountryDetailsApp-Bridging-Header.h */,
+				DCA19F0C24A1331200EAC43B /* Reachability.swift */,
 			);
 			path = "Network Rechability";
 			sourceTree = "<group>";
@@ -296,17 +298,18 @@
 				DC53606E249681EB0031EEA7 /* CountryDetailsViewController.swift in Sources */,
 				DC53606A249681EB0031EEA7 /* AppDelegate.swift in Sources */,
 				DC5360B32496AE9D0031EEA7 /* UIImageView+Extension.swift in Sources */,
-				DC53609524968A3A0031EEA7 /* Reachability.m in Sources */,
 				DC5360A524969CBA0031EEA7 /* CountryDetails.swift in Sources */,
 				DC5360B52496B04B0031EEA7 /* Constants.swift in Sources */,
 				DC5360A92496A3230031EEA7 /* ServiceHandler.swift in Sources */,
 				DC53606C249681EB0031EEA7 /* SceneDelegate.swift in Sources */,
 				DC5360B12496A8960031EEA7 /* CountryDetailsViewModel.swift in Sources */,
+				DCA19F0D24A1331200EAC43B /* Reachability.swift in Sources */,
 				DC5360AD2496A34A0031EEA7 /* JsonCoder.swift in Sources */,
 				DC5360A72496A2A40031EEA7 /* ServiceCalls.swift in Sources */,
 				DC5360A124969C860031EEA7 /* Country.swift in Sources */,
 				DC5360AF2496A8840031EEA7 /* CountryViewModel.swift in Sources */,
 				DC53609F249695290031EEA7 /* CountryDetailTableViewCell.swift in Sources */,
+				DCA19F0F24A13A0700EAC43B /* LoadingOverlayView.swift in Sources */,
 				DC5360AB2496A3360031EEA7 /* ApplicationError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA19F1124A146E900EAC43B /* CountryServiceCallTests.swift in Sources */,
 				DC536081249681F50031EEA7 /* CountryDetailsAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -445,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -460,16 +464,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 28QJ8Q9QS5;
 				INFOPLIST_FILE = CountryDetailsApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MyApps.CountryDetailsApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.developer.ajay.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CountryDetailsApp/NetworkOperations/Network Rechability/CountryDetailsApp-Bridging-Header.h";
+				PROVISIONING_PROFILE_SPECIFIER = "Developement - Ajay";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -481,16 +488,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 28QJ8Q9QS5;
 				INFOPLIST_FILE = CountryDetailsApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MyApps.CountryDetailsApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.developer.ajay.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CountryDetailsApp/NetworkOperations/Network Rechability/CountryDetailsApp-Bridging-Header.h";
+				PROVISIONING_PROFILE_SPECIFIER = "Developement - Ajay";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -501,9 +511,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 28QJ8Q9QS5;
 				INFOPLIST_FILE = CountryDetailsAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -511,6 +523,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MyApps.CountryDetailsAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CountryDetailsApp.app/CountryDetailsApp";
@@ -522,9 +536,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 28QJ8Q9QS5;
 				INFOPLIST_FILE = CountryDetailsAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -532,6 +548,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MyApps.CountryDetailsAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CountryDetailsApp.app/CountryDetailsApp";

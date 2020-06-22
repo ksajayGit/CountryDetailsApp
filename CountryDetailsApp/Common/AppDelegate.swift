@@ -11,15 +11,10 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var reachability: Reachability!
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        // MARK: Network Reachability Code
-        reachability = Reachability.forInternetConnection()
-        reachability.startNotifier()
         
         // MARK: set root view controller
         window = UIWindow(frame: UIScreen.main.bounds)
