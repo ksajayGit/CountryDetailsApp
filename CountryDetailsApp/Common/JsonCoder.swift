@@ -10,16 +10,15 @@ import Foundation
 
 struct JsonCoder{
     private let decoder = JSONDecoder()
-    
     init(keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy = .convertFromSnakeCase) {
         decoder.keyDecodingStrategy = keyDecodingStrategy
     }
-    
+    // MARK: JSON Decode generic method
     func decode<T>(data: Data, completion: (Result<T, Error>) -> Void) where T: Decodable {
-        do{
+        do {
             let decodedObject = try decoder.decode(T.self, from: data)
             completion(.success(decodedObject))
-        }catch let e{
+        } catch let e {
             completion(.failure(e))
         }
     }

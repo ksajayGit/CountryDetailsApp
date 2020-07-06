@@ -9,46 +9,40 @@
 import Foundation
 
 class CountryViewModel: NSObject {
+    private let countryServiceCall: CountryServiceProtocol
     var countryname: String?
     var countryDetails: [CountryDetailsViewModel]? {
-        didSet{
-            guard let _ = countryDetails else { return }
+        didSet {
+            guard countryDetails != nil else { return }
             self.didFinishFetch?()
         }
     }
-    
     var error: Error? {
-        didSet{
+        didSet {
             self.showAlertClosure?()
         }
     }
-    
     var isLoading = false {
-        didSet{
+        didSet {
             self.updateLoadingStatus?()
         }
     }
-    
     //MARK: Closures for callback
-    var didFinishFetch: (() -> ())?
-    var showAlertClosure: (() -> ())?
-    var updateLoadingStatus: (() -> ())?
-    
-    private var dataServiceCall: ServiceCalls?
-    
-    init(dataServiceCall: ServiceCalls) {
-        self.dataServiceCall = dataServiceCall
+    var didFinishFetch: (() -> Void)?
+    var showAlertClosure: (() -> Void)?
+    var updateLoadingStatus: (() -> Void)?
+    init(serviceCall: CountryServiceProtocol) {
+        self.countryServiceCall = serviceCall
     }
-    
     func fetchCountryDetails(){
-        self.dataServiceCall?.getDetails(completion: { [weak self] (result: Result<Country, Error>) in
-            switch result{
-                case .success(let country):
+        self.countryServiceCall.getDetails(completion: { [weak self] (result: Result<Country, Error>) in
+            switch result {
+            case .success(let country):
                     self?.countryname = country.title
                     self?.countryDetails = country.rows.map({return CountryDetailsViewModel(countryDetails: $0)})
                     self?.error = nil
                     self?.isLoading = false
-                case .failure(let err):
+            case .failure(let err):
                     self?.error = err
                     self?.isLoading = false
             }

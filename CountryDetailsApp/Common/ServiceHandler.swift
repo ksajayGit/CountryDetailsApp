@@ -17,17 +17,14 @@ protocol ServiceHandlerProtocol {
 struct ServiceHandler: ServiceHandlerProtocol {
     static let sharedHandler = ServiceHandler()
     private var session = URLSession.shared
-    
-    private init(){
-    }
-    
+    private init() { }
     func handleServiceRequest(url: URL, completion: @escaping Response) {
         session.dataTask(with: url) { (data, _, error) in
-            if let err = error{
+            if let err = error {
                 completion(.failure(err))
-            }else if let data = data{
+            } else if let data = data {
                 completion(.success(data))
-            }else{
+            } else {
                 completion(.failure(ApplicationError.networkError))
             }
         }.resume()

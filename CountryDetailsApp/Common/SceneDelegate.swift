@@ -22,6 +22,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         let countryDetailsViewController = UINavigationController(rootViewController: CountryDetailsViewController())
+        let serviceCall = ServiceCalls(ServiceHandler.sharedHandler)
+        let countryFactsViewCountroller = countryDetailsViewController.visibleViewController as? CountryDetailsViewController
+        countryFactsViewCountroller?.serviceCall = serviceCall
         window?.rootViewController = countryDetailsViewController
         window?.windowScene = windowScene
     }

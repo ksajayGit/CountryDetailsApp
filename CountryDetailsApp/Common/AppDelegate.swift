@@ -13,13 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+        let serviceCall = ServiceCalls(ServiceHandler.sharedHandler)
         // MARK: set root view controller
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         let countryDetailsViewController = UINavigationController(rootViewController: CountryDetailsViewController())
+        let countryFactsViewCountroller = countryDetailsViewController.visibleViewController as? CountryDetailsViewController
+        countryFactsViewCountroller?.serviceCall = serviceCall
         window?.rootViewController = countryDetailsViewController
         return true
     }

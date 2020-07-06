@@ -12,7 +12,6 @@ class CountryDetailsViewModel: NSObject {
     var title: String?
     var descriptionText: String?
     var imageUrl: String?
-    
     init(countryDetails: CountryDetails) {
         self.title = countryDetails.title
         self.descriptionText = countryDetails.description
